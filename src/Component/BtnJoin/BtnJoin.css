@@ -1,0 +1,49 @@
+.btn-join {
+    margin-right: 10px;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 22px;
+
+    cursor: pointer;
+    color: var(--const-color);
+    transition: all 1000ms;
+
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid var(--const-color);
+}
+
+.btn-join:hover {
+    color: initial;
+    transform: scale(1);
+    outline: 2px solid var(--const-color);
+
+}
+
+.btn-join::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--const-color);
+
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.btn-join:hover::before {
+    width: 250%;
+}
+
+.darkMode {
+
+    border-radius: 50%;
+    border: 1px solid #1fa84f;
+    padding-bottom: 5px;
+    font-size: 18px;
+    height: 45px;
+    width: 45px;
+}
