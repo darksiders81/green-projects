@@ -1,0 +1,68 @@
+.portList {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.active {
+    color: green;
+}
+
+.portListItem {
+    cursor: pointer;
+}
+
+.cardwrapper {
+    overflow: hidden;
+    width: 25rem;
+    height: 25rem;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+}
+
+.cardfooter {
+    color: #fff;
+    position: relative;
+    top: 410px;
+    transition: all 1s;
+
+
+}
+
+.cardBtn {
+    background-color: #C9C9FF;
+    font-size: 25px;
+    color: #1FA84F;
+    border: 0;
+    padding: 5px 0;
+
+}
+
+.cardtitle {
+    font-weight: bold;
+}
+
+.cardsubject {
+    font-weight: bold;
+}
+
+.cardhash {
+    display: flex;
+    justify-content: space-between;
+    color: #1FA84F;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cardwrapper:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 1000px 100px 100px 100px inset, rgba(0, 0, 0, 0.3) 100px 100px 100px 100px inset;
+}
+
+.cardwrapper:hover .cardfooter {
+    top: 210px;
+}
