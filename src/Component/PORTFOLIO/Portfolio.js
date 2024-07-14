@@ -1,20 +1,14 @@
 import React, { useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap";
-import CardGroup from 'react-bootstrap/CardGroup';
-import { FaEye } from "react-icons/fa";
+import { portfolioData } from '../../data';
 import './Portfolio.css'
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 import CardPortfolio from './CardPortfolio';
 export default function Portfolio() {
 
-    const [cardInfo, setCardInfo] = useState([
-        {id: 1, title: 'TANSIAPP', desc: 'Mobile Application', hasht: ['#React', ' #HTML', '#Next_js', '#Node'], images: 'https://erramix-themes.com/techidaa/images/portfolio/1.jpg'},
-        { id: 2, title: 'TANSIAPP', desc: 'Mobile Application', hasht: ['#Js', ' #HTML', '#Next_js', '#Node'], images: 'https://erramix-themes.com/techidaa/images/portfolio/2.jpg' },
-        { id: 3, title: 'IMOLAS', desc: 'Mobile Application', hasht: ['#Redux', ' #HTML', '#Next_js', '#Gsap'], images: 'https://erramix-themes.com/techidaa/images/portfolio/3.jpg' },
-        { id: 4, title: 'TANSIAPP', desc: 'Mobile Application', hasht: ['#React', ' #HTML', '#Next_js', '#Node'], images: 'https://erramix-themes.com/techidaa/images/portfolio/4.png' },
-        { id: 5, title: 'TAKNARUYTAPP', desc: 'Web Application', hasht: ['#React', ' #PHP', '#Next_js', '#Node'], images: 'https://erramix-themes.com/techidaa/images/portfolio/5.jpeg' },
-        { id: 6, title: 'BODIHAPP', desc: 'Mobile Application', hasht: ['#React', ' #HTML', '#Ruby', '#Node'], images: 'https://erramix-themes.com/techidaa/images/portfolio/6.jpg' }
-    ])
-
+    const [cardInfo, setCardInfo] = useState(portfolioData)
+    const [key, setKey] = useState('all');
     return (
 
         <>
@@ -26,18 +20,49 @@ export default function Portfolio() {
                         <h1 style={{ fontSize: '50px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }}>Our Portfolio</h1>
                     </Col>
                     <Col lg={7} xs={12}>
-                        <ul className="portList">
-                            <li className='portListItem'>All</li>
-                            <li className='portListItem'>Mobile</li>
-                            <li className='portListItem'>Data</li>
-                            <li className='portListItem'>Web</li>
-                        </ul>
+                        <Tabs
+                            style={{ color: '#1FA84F' }}
+                            id="controlled-tab-example"
+                            activeKey={key}
+                            onSelect={(k) => setKey(k)}
+                            className="mb-3 portList"
+                        >
+                            <Tab style={{ color: '#1FA84F' }} eventKey="all" title="All" className='portListItem'>
+
+                            </Tab>
+                            <Tab style={{ color: '#1FA84F' }} eventKey="mobile" title="Mobile" className='portListItem'>
+
+                            </Tab>
+                            <Tab style={{ color: '#1FA84F' }} eventKey="data" title="Data" className='portListItem'>
+
+                            </Tab>
+                            <Tab style={{ color: '#1FA84F' }} eventKey="web" title="Web" className='portListItem'>
+
+                            </Tab>
+                        </Tabs>
+
+
+
+
+
+
+
+
                     </Col>
                 </Row>
 
                 <Row className='g-3'>
-                    {cardInfo.map(card => (
+                    {key === 'all' && cardInfo.map(card => (
                         <CardPortfolio {...card} />
+                    ))}
+                    {key === 'mobile' && cardInfo.map(card => (
+                        card.desc === 'Mobile Application' && <CardPortfolio {...card} />
+                    ))}
+                    {key === 'data' && cardInfo.map(card => (
+                        card.desc === 'Data' && <CardPortfolio {...card} />
+                    ))}
+                    {key === 'web' && cardInfo.map(card => (
+                        card.desc === 'Web Application' && <CardPortfolio {...card} />
                     ))}
                 </Row>
 

@@ -8,11 +8,11 @@ import allRoutes from './router';
 import NavBars from './Component/Header/NavBar/NavBars';
 
 function App() {
-
+  
   let Router = useRoutes(allRoutes)
   return (
     <>
-      <div className="App">
+      <div className="App" >
         <NavBars />
       </div>
       {Router}

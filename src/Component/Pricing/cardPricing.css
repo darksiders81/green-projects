@@ -1,0 +1,100 @@
+.cardItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eff0ef;
+    padding: 10px;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.cardItemHeader {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.cardsIcons {
+    font-size: 70px;
+    color: gray;
+}
+
+.cardsValue {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.cardPrice {
+    font-size: 50px;
+    font-weight: 700;
+    color: #1fa84f;
+}
+
+.cardDist {
+    font-size: 22px;
+    font-size: 700;
+    color: gray;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bodyContainer {
+    margin-top: 10px;
+
+}
+
+.bodydisc {
+    font-size: 18px;
+}
+
+.bodyIcons {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.greenIcon {
+    color: #1fa84f;
+}
+
+.redIcon {
+    color: #8f4962;
+}
+
+.backGreen {
+    background-color: #1fa84f;
+}
+
+.backGreen .cardsIcons {
+    color: #d8d8d8;
+}
+
+.backGreen .cardsValue {
+    color: black;
+}
+
+.backGreen .cardPrice {
+    color: #eff0ef;
+}
+
+.backGreen .bodydisc {
+    color: #d2d8d8;
+}
+
+.backGreen .greenIcon {
+    color: green;
+}
+
+.backGreen .cardDist {
+    color: #d2d8d8;
+}
+
+.cardFooter {
+    margin-top: 30px;
+}

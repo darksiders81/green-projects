@@ -12,6 +12,7 @@
 
 .portListItem {
     cursor: pointer;
+    color: #1FA84F !important;
 }
 
 .cardwrapper {

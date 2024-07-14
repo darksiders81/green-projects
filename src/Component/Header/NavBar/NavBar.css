@@ -1,0 +1,14 @@
+.containetNav {
+
+    margin-bottom: 100px;
+    z-index: 999999;
+    background-color: #EFF0EF !important;
+}
+
+.containetNav a {
+    text-decoration: none;
+}
+
+.containetNav a:hover {
+    color: #1FA84F !important;
+}

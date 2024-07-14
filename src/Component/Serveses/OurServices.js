@@ -2,23 +2,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import CardGroup from 'react-bootstrap/CardGroup';
 import CardSer from "./Card/CardSer";
 import { useState } from "react";
-import { IoCodeSlashOutline } from "react-icons/io5";
-import { HiSpeakerphone } from "react-icons/hi";
-import { FaSearch } from "react-icons/fa";
-import { IoBugSharp } from "react-icons/io5";
-import { IoIosColorPalette } from "react-icons/io";
-import { IoLogoAndroid } from "react-icons/io";
+import { ourServicesDatas } from "../../data";
 
 function OurServices() {
-    let decs = 'Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Optio Unde, Exped Ita Nesciunt Quibusdam Quis Tempore Quas Tenetur'
-    const [cardInformation, setCardInformation] = useState([
-        { id: 1, title: 'Web Developement', icons: <IoCodeSlashOutline />, decs, link: '#action1' },
-        { id: 2, title: 'Digital Marketing', icons: <HiSpeakerphone />, decs, link: '#action2' },
-        { id: 3, title: 'SEO Services', icons: <FaSearch />, decs, link: '#action3' },
-        { id: 4, title: 'Cyber Security', icons: <IoBugSharp />, decs, link: '#action4' },
-        { id: 5, title: 'Graphic Design', icons: <IoIosColorPalette />, decs, link: '#action5' },
-        { id: 6, title: 'Apps Developement', icons: <IoLogoAndroid />, decs, link: '#action6' }
-    ])
+    
+    const [cardInformation, setCardInformation] = useState(ourServicesDatas)
 
 
 

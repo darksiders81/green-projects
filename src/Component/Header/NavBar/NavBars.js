@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
-import { Container } from "react-bootstrap";
+import React from 'react'
+import { Container, NavLink } from "react-bootstrap";
 import { Nav, Navbar } from 'react-bootstrap';
 import DropdownCMP from './DropdownCMP';
 import { FaMoon } from "react-icons/fa";
 import BtnJoin from '../../BtnJoin/BtnJoin';
+import './NavBar.css'
+import { Link } from 'react-router-dom';
+
 function NavBars() {
     const Home = [
         { id: 1, title: 'Home1' },
@@ -31,11 +34,12 @@ function NavBars() {
         { id: 4, title: 'Blog', link: '#Blog' },
         { id: 5, title: 'Contact Us', link: '#Contact' }
     ]
-    
+
     // style={{ backgroundColor: this.props.colors.thomeSecondry, color: this.props.colors.blackSecondry }}
     return (
-        <>
-            <Navbar expand="lg" className="fw-bold text-text-opacity-75 navbars">
+        <div className='containetNav'>
+            <Navbar fixed='top' style={{ backgroundColor: '#EFF0EF' }} expand="lg" className='fw-bold text-text-opacity-75 navbars'
+            >
                 <Container >
                     <Navbar.Brand href="#"><img width={150} src="https://erramix-themes.com/techidaa/images/logo/logo.png" alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -43,7 +47,9 @@ function NavBars() {
                         <Nav className="mx-auto my-2 my-lg-0">
                             <DropdownCMP className="hover-time" name='Home' obj={Home} />
                             {allNavLinks.map((navLink) => (
-                                <Nav.Link className="hover-time" key={navLink.id} href={navLink.link}>{navLink.title}</Nav.Link>
+                                <Link key={navLink.id} to={navLink.link}>
+                                    <NavLink className="hover-time" href=''>{navLink.title}</NavLink>
+                                </Link>
                             ))}
                             <DropdownCMP className="hover-time" name='Pages' obj={pages} />
                         </Nav>
@@ -58,7 +64,7 @@ function NavBars() {
                 </Container>
             </Navbar>
 
-        </>
+        </div>
     )
 }
 

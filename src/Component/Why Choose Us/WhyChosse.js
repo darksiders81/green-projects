@@ -2,14 +2,10 @@ import React, { useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap";
 import CardGroup from 'react-bootstrap/CardGroup';
 import CardWhy from './CardWhy';
-
+import { whyChosseDatas } from '../../data';
 export default function WhyChosse() {
-    let dest = 'Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Optio Unde, Exped Ita Nesciunt Quibusdam Quis Tempore Quas Tenetur'
-    const [cardInformations, setCardInformations] = useState([
-        { id: 1, numberTitle: '01.', title: 'Latest Technologies', dest },
-        { id: 2, numberTitle: '02.', title: 'Uniqe Solutions', dest },
-        { id: 3, numberTitle: '03.', title: 'Powerful Strategies', dest }
-    ])
+    
+    const [cardInformations, setCardInformations] = useState(whyChosseDatas)
     return (
         <>
             <Container className="mt-5 pt-5">

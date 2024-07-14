@@ -1,0 +1,62 @@
+import { IoCodeSlashOutline } from "react-icons/io5";
+import { HiSpeakerphone } from "react-icons/hi";
+import { FaSearch } from "react-icons/fa";
+import { IoBugSharp } from "react-icons/io5";
+import { IoIosColorPalette } from "react-icons/io";
+import { IoLogoAndroid } from "react-icons/io";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { IoLogoUsd } from "react-icons/io";
+import { RiCashLine } from "react-icons/ri";
+import { GiMoneyStack } from "react-icons/gi";
+
+
+
+
+let decs =
+    'Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Optio Unde, Exped Ita Nesciunt Quibusdam Quis Tempore Quas Tenetur';
+
+
+
+
+let ourServicesDatas = [
+    { id: 1, title: 'Web Developement', icons: <IoCodeSlashOutline />, decs, link: '#action1' },
+    { id: 2, title: 'Digital Marketing', icons: <HiSpeakerphone />, decs, link: '#action2' },
+    { id: 3, title: 'SEO Services', icons: <FaSearch />, decs, link: '#action3' },
+    { id: 4, title: 'Cyber Security', icons: <IoBugSharp />, decs, link: '#action4' },
+    { id: 5, title: 'Graphic Design', icons: <IoIosColorPalette />, decs, link: '#action5' },
+    { id: 6, title: 'Apps Developement', icons: <IoLogoAndroid />, decs, link: '#action6' }
+];
+
+
+
+
+let dest = 'Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Optio Unde, Exped Ita Nesciunt Quibusdam Quis Tempore Quas Tenetur'
+let whyChosseDatas = [
+    { id: 1, numberTitle: '01.', title: 'Latest Technologies', dest },
+    { id: 2, numberTitle: '02.', title: 'Uniqe Solutions', dest },
+    { id: 3, numberTitle: '03.', title: 'Powerful Strategies', dest }
+];
+
+
+let portfolioData = [
+    { id: 1, title: 'TANSIAPP', desc: 'Mobile Application', hasht: ['#React', ' #HTML', '#Next_js', '#Node'], images: 'https://erramix-themes.com/techidaa/images/portfolio/1.jpg' },
+    { id: 2, title: 'TANSIAPP', desc: 'Mobile Application', hasht: ['#Js', ' #HTML', '#Next_js', '#Node'], images: 'https://erramix-themes.com/techidaa/images/portfolio/2.jpg' },
+    { id: 3, title: 'IMOLAS', desc: 'Web Application', hasht: ['#Redux', ' #HTML', '#Next_js', '#Gsap'], images: 'https://erramix-themes.com/techidaa/images/portfolio/3.jpg' },
+    { id: 4, title: 'TANSIAPP', desc: 'Web Application', hasht: ['#React', ' #HTML', '#Next_js', '#Node'], images: 'https://erramix-themes.com/techidaa/images/portfolio/4.png' },
+    { id: 5, title: 'TAKNARUYTAPP', desc: 'Web Application', hasht: ['#React', ' #PHP', '#Next_js', '#Node'], images: 'https://erramix-themes.com/techidaa/images/portfolio/5.jpeg' },
+    { id: 6, title: 'BODIHAPP', desc: 'Data', hasht: ['#React', ' #HTML', '#Ruby', '#Node'], images: 'https://erramix-themes.com/techidaa/images/portfolio/6.jpg' }
+]
+
+
+
+
+let pricingData = [
+    { id: 1, icon: <MdOutlineShoppingCart />, Value: 'Free', price: '00$', dist: 'Per Project', ticks: ['Single User', 'No Updates', 'Limited Acces Library', 'Lorem Ipsum', 'Dolor Sit Amet'] },
+    { id: 2, icon: <IoLogoUsd />, Value: 'Basic', price: '19$', dist: 'Per Project', ticks: ['Single User', 'No Updates', 'Limited Acces Library', 'Lorem Ipsum'], noTicks: ['Dolor Sit Amet'] },
+    { id: 3, icon: <RiCashLine />, Value: 'Standerd', price: '39$', dist: 'Per Project', ticks: ['Single User', 'No Updates', 'Limited Acces Library'], noTicks: ['Dolor Sit Amet', 'Lorem Ipsum'] },
+    { id: 4, icon: <GiMoneyStack />, Value: 'Pro', price: '99$', dist: 'Per Project', ticks: ['Single User', 'No Updates'], noTicks: ['Dolor Sit Amet', 'Lorem Ipsum', 'Limited Acces Library'] }
+]
+
+
+
+export { ourServicesDatas, whyChosseDatas, portfolioData, pricingData }
