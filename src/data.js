@@ -8,6 +8,10 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoLogoUsd } from "react-icons/io";
 import { RiCashLine } from "react-icons/ri";
 import { GiMoneyStack } from "react-icons/gi";
+import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+
+import { TiSocialTwitter } from "react-icons/ti";
+
 
 
 
@@ -68,6 +72,21 @@ let TestimonialsData = [
     { id: 5, fullName: 'Gusavo Fring', comLorem, imgProfile: 'https://erramix-themes.com/techidaa/images/testimonials/testimonials-5.jpg', starFull: [0, 1], startHalf: [0], starEmty: [0, 1] },
     { id: 6, fullName: 'Ahmad Erammi', comLorem, imgProfile: 'https://erramix-themes.com/techidaa/images/testimonials/testimonials-1.jpg', starFull: [0, 1, 2], startHalf: [0], starEmty: [0] }
 ]
+let teamDatas = [
+    { id: 1, name: 'Moein Khanafari', job: 'Front-End Developer', image: 'https://erramix-themes.com/techidaa/images/team/team-1.jpg' },
+    { id: 2, name: 'Steve Jobs', job: 'Back-End Developer', image: 'https://erramix-themes.com/techidaa/images/team/team-2.jpg' },
+    { id: 3, name: 'Elon Musk', job: 'Web Designer', image: 'https://erramix-themes.com/techidaa/images/team/team-3.jpg' },
+    { id: 4, name: 'Pavel Durov', job: 'CEO Founder', image: 'https://erramix-themes.com/techidaa/images/team/team-4.jpg' }
+]
 
 
-export { ourServicesDatas, whyChosseDatas, portfolioData, pricingData, TestimonialsData }
+
+
+let iconsTeamSocial = [
+    { id: 1, icon: <FaFacebook /> },
+    { id: 2, icon: <FaInstagram /> },
+    { id: 3, icon: <TiSocialTwitter /> },
+    { id: 4, icon: <FaLinkedin /> }
+]
+
+export { ourServicesDatas, whyChosseDatas, portfolioData, pricingData, TestimonialsData, teamDatas ,iconsTeamSocial }

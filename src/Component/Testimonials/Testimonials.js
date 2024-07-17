@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Col, Container, Row, Carousel, CardGroup } from 'react-bootstrap'
+import { Col, Container, Row, CardGroup } from 'react-bootstrap'
 import { TestimonialsData } from '../../data'
 import CardTestItem from './CardTestItem'
 

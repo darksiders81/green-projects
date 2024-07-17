@@ -6,6 +6,7 @@ import WhyChosse from '../../Component/Why Choose Us/WhyChosse'
 import Portfolio from '../../Component/PORTFOLIO/Portfolio'
 import Pricing from '../../Component/Pricing/Pricing'
 import Testimonials from '../../Component/Testimonials/Testimonials'
+import Teams from '../../Component/Teams/Teams'
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <Portfolio />
             <Pricing />
             <Testimonials />
+            <Teams />
         </>
     )
 }
