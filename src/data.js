@@ -56,7 +56,18 @@ let pricingData = [
     { id: 3, icon: <RiCashLine />, Value: 'Standerd', price: '39$', dist: 'Per Project', ticks: ['Single User', 'No Updates', 'Limited Acces Library'], noTicks: ['Dolor Sit Amet', 'Lorem Ipsum'] },
     { id: 4, icon: <GiMoneyStack />, Value: 'Pro', price: '99$', dist: 'Per Project', ticks: ['Single User', 'No Updates'], noTicks: ['Dolor Sit Amet', 'Lorem Ipsum', 'Limited Acces Library'] }
 ]
+let comLorem = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore dolore laborum dolorum culpa
+              ducimus ipsam quo, veniam animi pariatur facilis tempora incidunt nostrum quisquam, cum quasi laudantium?
+              Voluptates, sequi? Possimus ipsa, excepturi praesentium dolore quae placeat voluptatem doloremque
+              deserunt?`
+let TestimonialsData = [
+    { id: 1, fullName: 'John Wick', comLorem, imgProfile: 'https://erramix-themes.com/techidaa/images/testimonials/testimonials-2.jpg', starFull: [0, 1, 2], startHalf: [0], starEmty: [0] },
+    { id: 2, fullName: 'Soul Goodman', comLorem, imgProfile: 'https://erramix-themes.com/techidaa/images/testimonials/testimonials-5.jpg', starFull: [0, 1, 2], startHalf: [], starEmty: [0, 1] },
+    { id: 3, fullName: 'Adam Smith', comLorem, imgProfile: 'https://erramix-themes.com/techidaa/images/testimonials/testimonials-3.jpg', starFull: [0, 1, 2, 3, 4], startHalf: [], starEmty: [] },
+    { id: 4, fullName: 'Walter White', comLorem, imgProfile: 'https://erramix-themes.com/techidaa/images/testimonials/testimonials-4.jpg', starFull: [0, 1, 2, 3, 4], startHalf: [], starEmty: [] },
+    { id: 5, fullName: 'Gusavo Fring', comLorem, imgProfile: 'https://erramix-themes.com/techidaa/images/testimonials/testimonials-5.jpg', starFull: [0, 1], startHalf: [0], starEmty: [0, 1] },
+    { id: 6, fullName: 'Ahmad Erammi', comLorem, imgProfile: 'https://erramix-themes.com/techidaa/images/testimonials/testimonials-1.jpg', starFull: [0, 1, 2], startHalf: [0], starEmty: [0] }
+]
 
 
-
-export { ourServicesDatas, whyChosseDatas, portfolioData, pricingData }
+export { ourServicesDatas, whyChosseDatas, portfolioData, pricingData, TestimonialsData }

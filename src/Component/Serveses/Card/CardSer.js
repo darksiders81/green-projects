@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import { Row, Col, CardLink } from "react-bootstrap";
+import {  Col, CardLink } from "react-bootstrap";
 import { FaArrowRightLong } from "react-icons/fa6";
 function CardSer(props) {
     return (
