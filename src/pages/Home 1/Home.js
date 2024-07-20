@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import OurServices from '../../Component/Serveses/OurServices'
 import Head from '../../Component/Header/Head/Head'
 import About from '../../Component/About/About'
@@ -9,8 +9,9 @@ import Testimonials from '../../Component/Testimonials/Testimonials'
 import Teams from '../../Component/Teams/Teams'
 
 export default function Home() {
+   
     return (
-        <>
+        <div>
             <Head />
             <OurServices />
             <About />
@@ -19,6 +20,6 @@ export default function Home() {
             <Pricing />
             <Testimonials />
             <Teams />
-        </>
+        </div>
     )
 }

@@ -15,7 +15,7 @@ export default function CardsTeams(props) {
                         <div className="iconContainer my-2">
                             {allIcon.map(icon => (
                                 <span className='iconsso'>
-                                    <a href='#'>
+                                    <a href='#as'>
                                         {icon.icon}
                                     </a>
                                 </span>

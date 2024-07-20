@@ -67,3 +67,7 @@
 .cardwrapper:hover .cardfooter {
     top: 210px;
 }
+
+.portListItem .active {
+    color: #1FA84F !important;
+}

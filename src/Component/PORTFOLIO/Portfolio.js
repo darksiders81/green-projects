@@ -19,13 +19,13 @@ export default function Portfolio() {
                     <Col lg={10} xs={12} className="mb-1">
                         <h1 style={{ fontSize: '50px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }}>Our Portfolio</h1>
                     </Col>
-                    <Col lg={7} xs={12}>
+                    <Col lg={12} xs={12}>
                         <Tabs
                             style={{ color: '#1FA84F' }}
                             id="controlled-tab-example"
                             activeKey={key}
                             onSelect={(k) => setKey(k)}
-                            className="mb-3 portList"
+                            className="mb-2 portList"
                         >
                             <Tab style={{ color: '#1FA84F' }} eventKey="all" title="All" className='portListItem'>
 
