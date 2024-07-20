@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import { Container, Col, Row, CardGroup } from 'react-bootstrap'
-import { FaMap } from "react-icons/fa";
-import { BiSupport } from "react-icons/bi";
-import { IoGameControllerOutline } from "react-icons/io5";
-import { IoIosStar } from "react-icons/io";
+import { aboutInfodatas } from '../../../data'
 import CardAbout from "./CardAbout"
 
 
@@ -13,12 +10,7 @@ import CardAbout from "./CardAbout"
 
 
 export default function Two() {
-    const [infoCardAbout, setinfoCardAbout] = useState([
-        { id: 1, title: 'Worldwide Services', icon: <FaMap size={40} /> },
-        { id: 2, title: 'Support 24h/24', icon: <BiSupport size={40} /> },
-        { id: 3, title: 'Easy To Reach', icon: <IoGameControllerOutline size={40} /> },
-        { id: 4, title: 'First On Field', icon: <IoIosStar size={40} /> }
-    ])
+    const [infoCardAbout] = useState(aboutInfodatas)
     return (
         <>
             <Container className='my-5'>

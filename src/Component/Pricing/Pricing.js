@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { pricingData } from '../../data';
 import CardPricing from './CardPricing';
 export default function Pricing() {
-    const [cardPricingInfo, setCardPricingInfo] = useState(pricingData)
+    const [cardPricingInfo] = useState(pricingData)
     return (
         <>
 

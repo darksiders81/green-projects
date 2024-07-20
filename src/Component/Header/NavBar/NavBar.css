@@ -1,11 +1,12 @@
 .containerNav {
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     z-index: 999999;
 
 }
 
 .containerNav a {
     text-decoration: none;
+    color: var(--text-nav) !important;
 }
 
 .containerNav a:hover {

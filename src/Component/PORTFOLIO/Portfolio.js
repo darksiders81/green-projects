@@ -7,7 +7,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import CardPortfolio from './CardPortfolio';
 export default function Portfolio() {
 
-    const [cardInfo, setCardInfo] = useState(portfolioData)
+    const [cardInfo] = useState(portfolioData)
     const [key, setKey] = useState('all');
     return (
 
@@ -18,7 +18,7 @@ export default function Portfolio() {
                 <Row>
                     <Col lg={10} xs={12} className="mb-1">
                         <h1 className='titleClass'
-                         style={{ fontSize: '50px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }}>
+                            style={{ fontSize: '50px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }}>
                             Our Portfolio</h1>
                     </Col>
                     <Col lg={7} xs={12}>

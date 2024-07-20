@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Col } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 import { MdOutlineStar } from "react-icons/md";
 import { MdOutlineStarOutline } from "react-icons/md";
 import { MdOutlineStarHalf } from "react-icons/md";
@@ -35,7 +35,7 @@ export default function CardTestItem(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="card-body fw-normal mt-2 p-3 text-center " >
+                    <div className="card-body fw-normal mt-2 p-3 text-center textBody " >
                         {props.comLorem}
                     </div>
 

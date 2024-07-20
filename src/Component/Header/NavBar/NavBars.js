@@ -2,12 +2,25 @@ import React from 'react'
 import { Container, NavLink } from "react-bootstrap";
 import { Nav, Navbar } from 'react-bootstrap';
 import DropdownCMP from './DropdownCMP';
-import { FaMoon } from "react-icons/fa";
+
 import BtnJoin from '../../BtnJoin/BtnJoin';
 import './NavBar.css'
 import { Link } from 'react-router-dom';
+import useDarkMode from '../../../hook/useDarkMode';
+import { MdLightMode, MdDarkMode } from "react-icons/md";
 
 function NavBars() {
+
+    const [isDark, setIsDark] = useDarkMode()
+    const clickHandler = () => {
+        if (isDark === 'dark') {
+
+            setIsDark('light')
+        } else {
+
+            setIsDark('dark')
+        }
+    }
     const Home = [
         { id: 1, title: 'Home1' },
         { id: 2, title: 'Home2' },
@@ -45,18 +58,18 @@ function NavBars() {
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="mx-auto my-2 my-lg-0">
-                            <DropdownCMP  name='Home' obj={Home} />
+                            <DropdownCMP name='Home' obj={Home} />
                             {allNavLinks.map((navLink) => (
                                 <Link key={navLink.id} to={navLink.link}>
-                                    <NavLink  href=''>{navLink.title}</NavLink>
+                                    <NavLink href=''>{navLink.title}</NavLink>
                                 </Link>
                             ))}
-                            <DropdownCMP  name='Pages' obj={pages} />
+                            <DropdownCMP name='Pages' obj={pages} />
                         </Nav>
 
                         <BtnJoin className='me-1' />
-                        <button className='darkMode'>
-                            <FaMoon />
+                        <button className='darkMode ' onClick={clickHandler}>
+                            {isDark === 'dark' ? <MdLightMode /> : <MdDarkMode />}
                         </button>
 
 

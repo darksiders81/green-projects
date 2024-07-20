@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import One from './section one/One'
 import Two from './section two/Two'
 import Tree from './section tree/Tree'
@@ -12,7 +12,7 @@ export default function About() {
 
 
     return (
-        <div className='my-3'>
+        <div className='my-3 bg-color'>
             <One className='mt-5' />
             <Two className='mt-5' />
             <Tree className='my-5' />

@@ -5,7 +5,7 @@ import CardWhy from './CardWhy';
 import { whyChosseDatas } from '../../data';
 export default function WhyChosse() {
     
-    const [cardInformations, setCardInformations] = useState(whyChosseDatas)
+    const [cardInformations] = useState(whyChosseDatas)
     return (
         <>
             <Container className="mt-5 pt-5">

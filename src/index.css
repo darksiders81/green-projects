@@ -50,3 +50,15 @@ body::-webkit-scrollbar-thumb {
         scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
     }
 }
+
+.progress {
+    color: #1fa84f !important;
+}
+
+:root {
+    background-color: var(--bg-back) !important;
+}
+
+.bg-color {
+    background-color: var(--bg-back) !important;
+}

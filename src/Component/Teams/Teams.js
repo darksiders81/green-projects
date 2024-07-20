@@ -4,7 +4,7 @@ import { teamDatas } from '../../data'
 import './Team.css'
 import CardsTeams from './CardsTeams'
 export default function Teams() {
-    const [cardsteamInfo, setCardsteamInfo] = useState(teamDatas)
+    const [cardsteamInfo] = useState(teamDatas)
     return (
         <Container className='my-5'>
             <Row className="mt-5  ">

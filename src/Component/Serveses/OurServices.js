@@ -7,7 +7,7 @@ import { ourServicesDatas } from "../../data";
 
 function OurServices() {
     
-    const [cardInformation, setCardInformation] = useState(ourServicesDatas)
+    const [cardInformation] = useState(ourServicesDatas)
 
 
 

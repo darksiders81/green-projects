@@ -77,7 +77,8 @@
 }
 
 .darkMode {
-
+    background-color: var(--bg-home) !important;
+    color: var(--title-text) !important;
     border-radius: 50%;
     border: 1px solid var(--const-color);
     padding-bottom: 5px;

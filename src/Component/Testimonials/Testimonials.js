@@ -4,7 +4,7 @@ import { TestimonialsData } from '../../data'
 import CardTestItem from './CardTestItem'
 
 export default function Testimonials() {
-    const [cardDataInfo, setCardDartaInfo] = useState(TestimonialsData)
+    const [cardDataInfo] = useState(TestimonialsData)
     return (
         <>
             <Container className='my-5'>
@@ -21,7 +21,7 @@ export default function Testimonials() {
                             </Col>
                             <Col lg={12} xs={12}>
 
-                                <p style={{ lineHeight: 2, fontSize: 18 }} className='text-opacity-50 text-body'>
+                                <p style={{ lineHeight: 2, fontSize: 18 }} className='text-opacity-50 textBody'>
                                     As A Matter Of Fact The Unification Of The Coherent Software Provides
                                     A Strict Control Over The Accomplishment Of Intended Estimation
                                 </p>

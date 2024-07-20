@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Card, Col } from 'react-bootstrap'
 import { iconsTeamSocial } from '../../data'
 export default function CardsTeams(props) {
-    const [allIcon, setAllIcon] = useState(iconsTeamSocial)
+    const [allIcon] = useState(iconsTeamSocial)
     return (
         <Col xxl={3} xl={3} lg={4} md={6} sm={12} xs={12} >
             <Card className='border-0 cardTeam mx-auto my-2 g-2 w-100' >

@@ -10,7 +10,7 @@ import Teams from '../../Component/Teams/Teams'
 
 export default function Home() {
     return (
-        <>
+        <div className='bg-color'>
             <Head />
             <OurServices />
             <About />
@@ -19,6 +19,6 @@ export default function Home() {
             <Pricing />
             <Testimonials />
             <Teams />
-        </>
+        </div>
     )
 }
