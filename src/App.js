@@ -1,10 +1,5 @@
 import './assets/bootstrap.min.css'
 import './App.css';
-<<<<<<< HEAD
-import './style.css'
-=======
-
->>>>>>> darkMode
 
 
 import { useRoutes } from 'react-router-dom';
