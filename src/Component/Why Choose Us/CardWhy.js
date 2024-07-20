@@ -6,7 +6,7 @@ export default function CardWhy(props) {
     return (
         <>
             <Col lg={4} className='g-4 ' >
-                <Card border='0' className='hover-animation' >
+                <Card border='0' className='transaction-card' >
                     <h1 className='titlenumber' style={{ fontSize: 55, paddingTop: 22, paddingLeft: 18 }} >
                         {props.numberTitle}
                     </h1>

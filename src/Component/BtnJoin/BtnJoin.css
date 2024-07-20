@@ -41,7 +41,7 @@
 .darkMode {
 
     border-radius: 50%;
-    border: 1px solid #1fa84f;
+    border: 1px solid var(--const-color);
     padding-bottom: 5px;
     font-size: 18px;
     height: 45px;

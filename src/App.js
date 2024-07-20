@@ -1,7 +1,7 @@
 import './assets/bootstrap.min.css'
 import './App.css';
 import './style.css'
-import Header from './Component/Header/Head/Header';
+
 
 import { useRoutes } from 'react-router-dom';
 import allRoutes from './router';

@@ -37,21 +37,21 @@ function NavBars() {
 
     // style={{ backgroundColor: this.props.colors.thomeSecondry, color: this.props.colors.blackSecondry }}
     return (
-        <div className='containetNav'>
-            <Navbar fixed='top' style={{ backgroundColor: '#EFF0EF' }} expand="lg" className='fw-bold text-text-opacity-75 navbars'
+        <div className='containerNav'>
+            <Navbar fixed='top' expand="lg" className='fw-bold text-text-opacity-75 navbars'
             >
                 <Container >
                     <Navbar.Brand href="#"><img width={150} src="https://erramix-themes.com/techidaa/images/logo/logo.png" alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="mx-auto my-2 my-lg-0">
-                            <DropdownCMP className="hover-time" name='Home' obj={Home} />
+                            <DropdownCMP  name='Home' obj={Home} />
                             {allNavLinks.map((navLink) => (
                                 <Link key={navLink.id} to={navLink.link}>
-                                    <NavLink className="hover-time" href=''>{navLink.title}</NavLink>
+                                    <NavLink  href=''>{navLink.title}</NavLink>
                                 </Link>
                             ))}
-                            <DropdownCMP className="hover-time" name='Pages' obj={pages} />
+                            <DropdownCMP  name='Pages' obj={pages} />
                         </Nav>
 
                         <BtnJoin className='me-1' />

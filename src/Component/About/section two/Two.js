@@ -31,14 +31,17 @@ export default function Two() {
 
 
                             <Col lg={12} xs={12}>
-                                <h1 className="text-center"
+                                <h1 className="text-center titleClass"
                                     style={{ fontSize: '40px', fontWeight: 700, lineHeight: '65px' }}>
-                                    We Deal With The Aspects Of Professional  <span className="text-green">IT Services</span>
+                                    We Deal With The Aspects Of Professional  <span className="greenTitle">IT Services</span>
                                 </h1>
                             </Col>
                             <Col lg={9} xs={12}>
 
-                                <p style={{ lineHeight: 2, fontSize: 18 }} className='text-opacity-50 text-start'>Although, Final Stages Of The Internal Network Gives A Complete Experience Of The Parameter Of Speculative Environment</p>
+                                <p style={{ lineHeight: 2, fontSize: 18 }} className='text-opacity-50 text-start textBody'>
+                                    Although, Final Stages Of The Internal Network Gives A Complete Experience Of
+                                    The Parameter Of Speculative Environment
+                                </p>
                                 <Row className=' '>
                                     <CardGroup className='align-items-center'>
                                         {infoCardAbout.map(info => (

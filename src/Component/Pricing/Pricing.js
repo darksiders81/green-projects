@@ -9,13 +9,17 @@ export default function Pricing() {
         <>
 
             <Container className="mt-5 pt-5">
-                <h4 className="text-green">PRICING</h4>
+                <h4 className="greenTitle">PRICING</h4>
                 <Row>
                     <Col lg={10} xs={12} className="mb-1">
-                        <h1 style={{ fontSize: '50px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }}>Our Pricing</h1>
+                        <h1 style={{ fontSize: '50px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }} className='titleClass'>Our Pricing</h1>
                     </Col>
                     <Col lg={7} xs={12}>
-                        <p>As A Matter Of Fact The Unification Of The Coherent Software Provides A Strict Control Over The Accomplishment Of Intended Estimation</p>
+                        <p className='textBody'>
+                            As A Matter Of Fact The Unification Of The Coherent
+                            Software Provides A Strict Control Over The Accomplishment
+                            Of Intended Estimation
+                        </p>
                     </Col>
                 </Row>
 

@@ -10,9 +10,13 @@
 }
 
 .iconContainer a {
-    color: #5E5E5E;
+    color: var(--text-nav);
 }
 
 .iconContainer a:hover {
     color: #1FA84F;
+}
+
+.cardTeam {
+    background-color: var(--bg-cardback) !important;
 }

@@ -6,26 +6,6 @@
     --bg-home: rgb(248, 246, 244);
 }
 
-.text-green {
-    color: var(--green-color);
-}
-
-.navbars>li>a:hover {
-    color: var(--green-color) !important;
-}
-
-.green-color:hover {
-    color: var(--green-color) !important;
-    background-color: var(--bg-home) !important;
-}
-
-.bg-graying {
-    background-color: var(--bg-home) !important;
-}
-
-.animation {
-    transition: background-color 0.5s;
-}
 
 #btn-join {
     background-color: var(--green-color);
@@ -138,55 +118,7 @@ body::-webkit-scrollbar-thumb {
     color: var(--green-color);
 }
 
-.hover-animation {
-    background-color: var(--bg-home);
-    transition: all 1000ms;
-    position: relative;
-    overflow: hidden;
 
-}
-
-.hover-animation svg {
-    color: var(--green-color);
-}
-
-.hover-animation:hover svg {
-    color: var(--bg-home);
-}
-
-.hover-animation .card-link {
-    color: var(--green-color);
-}
-
-.hover-animation:hover .card-link {
-    color: var(--bg-home);
-}
-
-.hover-animation:hover {
-    color: var(--green-color);
-    transform: scale(1);
-    outline: 0;
-
-    color: var(--bg-home);
-    border: 0;
-}
-
-.hover-animation::before {
-    content: "";
-    position: absolute;
-    left: -50px;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background-color: var(--green-color);
-
-    z-index: -1;
-    transition: width 1000ms;
-}
-
-.hover-animation:hover::before {
-    width: 250%;
-}
 
 ::selection {
     background-color: #1fa84f;

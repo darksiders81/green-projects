@@ -1,14 +1,33 @@
-.containetNav {
-
+.containerNav {
     margin-bottom: 100px;
     z-index: 999999;
-    background-color: #EFF0EF !important;
+
 }
 
-.containetNav a {
+.containerNav a {
     text-decoration: none;
 }
 
-.containetNav a:hover {
-    color: #1FA84F !important;
+.containerNav a:hover {
+    color: var(--const-color) !important;
+}
+
+.navbars {
+    background-color: var(--bg-cardback) !important;
+}
+
+.show {
+    background-color: var(--bg-cardback) !important;
+}
+
+.show a:hover {
+    background-color: var(--bg-cardback) !important;
+}
+
+.nav-link .dropdown-item {
+    color: var(--text-nav) !important;
+}
+
+.dropdown-item {
+    font-weight: 600 !important;
 }
