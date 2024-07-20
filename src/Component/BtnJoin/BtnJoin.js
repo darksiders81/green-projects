@@ -8,7 +8,7 @@ export default class BtnJoin extends Component {
 
     return (
       <>
-        <button  style={{ backgroundColor: this.props.bgcolor }} className='btn-join' id='btn-join'>{this.props.name}</button>
+        <button style={{ backgroundColor: this.props.bgcolor }} className='btn-join' id='btn-join'>{this.props.name}</button>
 
 
       </>
@@ -17,6 +17,6 @@ export default class BtnJoin extends Component {
 }
 BtnJoin.defaultProps = {
   name: 'Join Now',
-  bgcolor: '#1FA84F' 
-  
+  bgcolor: '#1FA84F'
+
 }
