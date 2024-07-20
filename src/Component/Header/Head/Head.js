@@ -4,7 +4,7 @@ import BtnJoin from "../../BtnJoin/BtnJoin";
 function Head() {
     return (
         <>
-            <Container>
+            <Container style={{ paddingTop: 50 }}>
                 <Row className="mt-5 justify-content-center align-items-center">
                     <Col lg={5} xs={12} className="text-start" >
                         <Row>
@@ -27,7 +27,7 @@ function Head() {
                         </Row>
 
                     </Col>
-                    <Col lg={7} xs={12}>
+                    <Col  lg={7} xs={12}>
                         <img className="img-fluid" src="https://erramix-themes.com/techidaa/images/hero/bodigmas_IT_solutions_company_illustrationvectorflat_designmini_942ad818-e3f4-47af-a5e8-78e030aff9c9-removebg.png" alt="" />
                     </Col>
                 </Row>
