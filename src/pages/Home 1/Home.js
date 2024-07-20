@@ -11,7 +11,11 @@ import Teams from '../../Component/Teams/Teams'
 export default function Home() {
    
     return (
+<<<<<<< HEAD
         <div>
+=======
+        <div className='bg-color'>
+>>>>>>> darkMode
             <Head />
             <OurServices />
             <About />

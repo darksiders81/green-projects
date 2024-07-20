@@ -6,13 +6,10 @@
     font-weight: bold;
 }
 
-.active {
-    color: green;
-}
 
 .portListItem {
     cursor: pointer;
-    color: #1FA84F !important;
+    color: var(--const-color) !important;
 }
 
 .cardwrapper {
@@ -55,7 +52,7 @@
 .cardhash {
     display: flex;
     justify-content: space-between;
-    color: #1FA84F;
+    color: var(--const-color);
     font-weight: bold;
     font-size: 18px;
 }
@@ -68,6 +65,16 @@
     top: 210px;
 }
 
+<<<<<<< HEAD
 .portListItem .active {
     color: #1FA84F !important;
+=======
+li>button {
+    color: var(--title-text) !important;
+}
+
+li>button.active {
+    color: var(--const-color) !important;
+
+>>>>>>> darkMode
 }

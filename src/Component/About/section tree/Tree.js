@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import ProgressBar from 'react-bootstrap/ProgressBar';
+
 import ProgressAbout from './ProgressAbout';
 
 export default function Tree() {
 
 
-    const [progresInfo, setprogresInfo] = useState([
+    const [progresInfo] = useState([
         { id: 1, title: 'App Development', progressNumber: 70 },
         { id: 2, title: 'UI/UX Design', progressNumber: 20 },
         { id: 3, title: 'Web Development', progressNumber: 55 }
@@ -22,14 +22,14 @@ export default function Tree() {
 
 
                             <Col lg={11} xs={12}>
-                                <h1
+                                <h1 className='titleClass'
                                     style={{ fontSize: '40px', fontWeight: 700, lineHeight: '65px' }}>
-                                    We Are Here To IT Solution With 20 Years Of   <span className="text-green">Experience</span>
+                                    We Are Here To IT Solution With 20 Years Of   <span className="greenTitle">Experience</span>
                                 </h1>
                             </Col>
                             <Col lg={10} xs={12}>
 
-                                <p style={{ lineHeight: 2, fontSize: 18 }} className='text-opacity-50 mt-2'>
+                                <p style={{ lineHeight: 2, fontSize: 18 }} className='text-opacity-50 mt-2 textBody'>
                                     Although, Final Stages Of The Internal Network Gives A Complete Experience
                                     Of The Parameter Of Speculative Environment</p>
 

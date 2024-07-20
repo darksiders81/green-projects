@@ -21,3 +21,7 @@
 .starIcons {
     font-size: 25px;
 }
+
+.container-card {
+    background-color: var(--bg-cardback) !important;
+}

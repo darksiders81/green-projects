@@ -9,7 +9,10 @@ import { IoLogoUsd } from "react-icons/io";
 import { RiCashLine } from "react-icons/ri";
 import { GiMoneyStack } from "react-icons/gi";
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
-
+import { FaMap } from "react-icons/fa";
+import { BiSupport } from "react-icons/bi";
+import { IoGameControllerOutline } from "react-icons/io5";
+import { IoIosStar } from "react-icons/io";
 import { TiSocialTwitter } from "react-icons/ti";
 
 
@@ -88,5 +91,10 @@ let iconsTeamSocial = [
     { id: 3, icon: <TiSocialTwitter /> },
     { id: 4, icon: <FaLinkedin /> }
 ]
-
-export { ourServicesDatas, whyChosseDatas, portfolioData, pricingData, TestimonialsData, teamDatas ,iconsTeamSocial }
+let aboutInfodatas = [
+    { id: 1, title: 'Worldwide Services', icon: <FaMap size={40} /> },
+    { id: 2, title: 'Support 24h/24', icon: <BiSupport size={40} /> },
+    { id: 3, title: 'Easy To Reach', icon: <IoGameControllerOutline size={40} /> },
+    { id: 4, title: 'First On Field', icon: <IoIosStar size={40} /> }
+]
+export { ourServicesDatas, whyChosseDatas, portfolioData, pricingData, TestimonialsData, teamDatas, iconsTeamSocial, aboutInfodatas }

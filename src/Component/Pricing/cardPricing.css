@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #eff0ef;
+    background-color: var(--bg-cardback);
     padding: 10px;
     border-radius: 30px;
     padding-bottom: 20px;
@@ -19,24 +19,25 @@
 
 .cardsIcons {
     font-size: 70px;
-    color: gray;
+    color: var(--text-body);
 }
 
 .cardsValue {
     font-weight: 600;
     font-size: 35px;
+    color: var(--title-text);
 }
 
 .cardPrice {
     font-size: 50px;
     font-weight: 700;
-    color: #1fa84f;
+    color: var(--const-color);
 }
 
 .cardDist {
     font-size: 22px;
     font-size: 700;
-    color: gray;
+    color: var(--text-body);
 }
 
 .cardBody {
@@ -52,6 +53,7 @@
 
 .bodydisc {
     font-size: 18px;
+    color: var(--text-body);
 }
 
 .bodyIcons {
@@ -60,7 +62,7 @@
 }
 
 .greenIcon {
-    color: #1fa84f;
+    color: var(--const-color);
 }
 
 .redIcon {
@@ -68,7 +70,7 @@
 }
 
 .backGreen {
-    background-color: #1fa84f;
+    background-color: var(--const-color);
 }
 
 .backGreen .cardsIcons {

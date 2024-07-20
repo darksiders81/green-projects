@@ -7,17 +7,19 @@ import Tabs from 'react-bootstrap/Tabs';
 import CardPortfolio from './CardPortfolio';
 export default function Portfolio() {
 
-    const [cardInfo, setCardInfo] = useState(portfolioData)
+    const [cardInfo] = useState(portfolioData)
     const [key, setKey] = useState('all');
     return (
 
         <>
 
             <Container className="mt-5 pt-5">
-                <h4 className="text-green">PORTFOLIO</h4>
+                <h4 className="greenTitle">PORTFOLIO</h4>
                 <Row>
                     <Col lg={10} xs={12} className="mb-1">
-                        <h1 style={{ fontSize: '50px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }}>Our Portfolio</h1>
+                        <h1 className='titleClass'
+                            style={{ fontSize: '50px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }}>
+                            Our Portfolio</h1>
                     </Col>
                     <Col lg={12} xs={12}>
                         <Tabs
@@ -27,7 +29,7 @@ export default function Portfolio() {
                             onSelect={(k) => setKey(k)}
                             className="mb-2 portList"
                         >
-                            <Tab style={{ color: '#1FA84F' }} eventKey="all" title="All" className='portListItem'>
+                            <Tab style={{ color: '#1FA84F' }} eventKey="all" title="All" className='portListItem '>
 
                             </Tab>
                             <Tab style={{ color: '#1FA84F' }} eventKey="mobile" title="Mobile" className='portListItem'>

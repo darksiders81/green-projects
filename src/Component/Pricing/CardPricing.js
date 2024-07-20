@@ -14,7 +14,7 @@ export default function CardPricing(props) {
                         <div className='cardsIcons'>
                             {props.icon}
                         </div>
-                        <div className='cardsValue'>
+                        <div className='cardsValue '>
                             {props.Value}
                         </div>
                         <div className='cardPrice'>

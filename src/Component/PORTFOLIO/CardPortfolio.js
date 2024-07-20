@@ -4,8 +4,13 @@ import { FaEye } from "react-icons/fa";
 export default function CardPortfolio(props) {
     return (
         <>
+<<<<<<< HEAD
             <Col xxl={4} xl={6} lg={6} xs={12} className=''  >
                 <div className='cardwrapper g-1' style={{ backgroundImage: `url(${props.images})` }} >
+=======
+            <Col xxl={4} xl={6} lg={6} xs={12} >
+                <div className='cardwrapper' style={{ backgroundImage: `url(${props.images})` }} >
+>>>>>>> darkMode
 
                     <Container fluid>
                         <div className="cardfooter">

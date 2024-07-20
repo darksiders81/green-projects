@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Col } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 import { MdOutlineStar } from "react-icons/md";
 import { MdOutlineStarOutline } from "react-icons/md";
 import { MdOutlineStarHalf } from "react-icons/md";
@@ -9,13 +9,13 @@ export default function CardTestItem(props) {
     return (
         <>
             <Col lg={4} xs={12} className=''>
-                <div className="container-card bg-light">
+                <div className="container-card bg-opacity-10">
                     <div className='d-flex  '>
                         <div>
                             <img src={props.imgProfile} alt="" className='profileImages' />
                         </div>
                         <div className='d-flex flex-column cards-name'>
-                            <h5 className='userCard'>{props.fullName}</h5>
+                            <h5 className='userCard titleClass'>{props.fullName}</h5>
                             <div className='starIcons'>
                                 <span>{
                                     props.starFull.map(star => (
@@ -35,7 +35,7 @@ export default function CardTestItem(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="card-body fw-normal mt-2 p-3 text-center " >
+                    <div className="card-body fw-normal mt-2 p-3 text-center textBody " >
                         {props.comLorem}
                     </div>
 
