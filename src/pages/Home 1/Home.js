@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import OurServices from '../../Component/Serveses/OurServices'
 import Head from '../../Component/Header/Head/Head'
 import About from '../../Component/About/About'
@@ -11,11 +11,7 @@ import Teams from '../../Component/Teams/Teams'
 export default function Home() {
    
     return (
-<<<<<<< HEAD
-        <div>
-=======
         <div className='bg-color'>
->>>>>>> darkMode
             <Head />
             <OurServices />
             <About />

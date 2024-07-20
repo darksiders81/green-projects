@@ -15,11 +15,7 @@ export default function CardsTeams(props) {
                         <div className="iconContainer my-2">
                             {allIcon.map(icon => (
                                 <span className='iconsso'>
-<<<<<<< HEAD
-                                    <a href='#as'>
-=======
                                     <a href='#action'>
->>>>>>> darkMode
                                         {icon.icon}
                                     </a>
                                 </span>

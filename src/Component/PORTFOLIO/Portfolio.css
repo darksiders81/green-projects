@@ -65,10 +65,6 @@
     top: 210px;
 }
 
-<<<<<<< HEAD
-.portListItem .active {
-    color: #1FA84F !important;
-=======
 li>button {
     color: var(--title-text) !important;
 }
@@ -76,5 +72,4 @@ li>button {
 li>button.active {
     color: var(--const-color) !important;
 
->>>>>>> darkMode
 }
