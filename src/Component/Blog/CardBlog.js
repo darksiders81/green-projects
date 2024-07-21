@@ -7,7 +7,7 @@ import { RxDrawingPinFilled } from "react-icons/rx";
 export default function CardBlog(props) {
   return (
     <>
-      <Col lg={4} className='g-4 ' >
+      <Col xl={4} lg={6} className='g-4 ' >
         <Card border='0' className='cardBackColor' >
           <Card.Img className='m-0' variant="top" src={props.image} />
           <Card.Body>
