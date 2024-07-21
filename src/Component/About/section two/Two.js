@@ -34,17 +34,17 @@ export default function Two() {
                                     Although, Final Stages Of The Internal Network Gives A Complete Experience Of
                                     The Parameter Of Speculative Environment
                                 </p>
-                                <Row className=' '>
-                                    <CardGroup className='align-items-center'>
-                                        {infoCardAbout.map(info => (
-                                            <CardAbout {...info} />
-                                        ))}
-                                    </CardGroup>
-                                </Row>
+
 
 
                             </Col>
-
+                            <Row className=' '>
+                                <CardGroup className='align-items-center'>
+                                    {infoCardAbout.map(info => (
+                                        <CardAbout {...info} />
+                                    ))}
+                                </CardGroup>
+                            </Row>
 
 
 

@@ -7,9 +7,10 @@ import Portfolio from '../../Component/PORTFOLIO/Portfolio'
 import Pricing from '../../Component/Pricing/Pricing'
 import Testimonials from '../../Component/Testimonials/Testimonials'
 import Teams from '../../Component/Teams/Teams'
+import Blog from '../../Component/Blog/Blog'
 
 export default function Home() {
-   
+
     return (
         <div className='bg-color'>
             <Head />
@@ -20,6 +21,7 @@ export default function Home() {
             <Pricing />
             <Testimonials />
             <Teams />
+            <Blog />
         </div>
     )
 }

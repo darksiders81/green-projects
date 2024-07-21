@@ -97,4 +97,37 @@ let aboutInfodatas = [
     { id: 3, title: 'Easy To Reach', icon: <IoGameControllerOutline size={40} /> },
     { id: 4, title: 'First On Field', icon: <IoIosStar size={40} /> }
 ]
-export { ourServicesDatas, whyChosseDatas, portfolioData, pricingData, TestimonialsData, teamDatas, iconsTeamSocial, aboutInfodatas }
+let decrption = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, mollitia quidem in voluptatem debitis adipisci neque porro error veniam hic iusto ut et ad repellendus molestiae amet, a, modi harum maxime? Neque, quas eius. Deserunt tempora cumque repellendus molestias perferendis.'
+let blogDatas = [
+    {
+        id: 1,
+        title: 'How To Learn Javascript Easily With This Method',
+        decrption,
+        writer: 'Moein' ,
+        image: 'https://erramix-themes.com/techidaa/images/blog/post-images/1.jpg',
+        category : 'Web Dev' ,
+        date : '27/05/2023'
+
+    },
+    {
+        id: 2,
+        title: 'How To Learn Javascript Easily With This Method',
+        decrption,
+        writer: 'Admin' ,
+        image: 'https://erramix-themes.com/techidaa/images/blog/post-images/2.jpg',
+        category : 'Web Dev',
+        date : '27/03/2023'
+
+    },
+    {
+        id: 3,
+        title: 'How To Learn Javascript Easily With This Method',
+        decrption,
+        writer: 'Mojtaba' ,
+        image: 'https://erramix-themes.com/techidaa/images/blog/post-images/3.jpg',
+        category : 'Marketing',
+        date : '20/04/2023'
+
+    }
+]
+export { ourServicesDatas, whyChosseDatas, portfolioData, pricingData, TestimonialsData, teamDatas, iconsTeamSocial, aboutInfodatas, blogDatas }

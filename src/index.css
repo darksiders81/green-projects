@@ -62,3 +62,6 @@ body::-webkit-scrollbar-thumb {
 .bg-color {
     background-color: var(--bg-back) !important;
 }
+.cardBackColor{
+    background-color: var(--bg-cardback) !important;
+}
