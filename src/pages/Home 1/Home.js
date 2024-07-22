@@ -9,6 +9,7 @@ import Testimonials from '../../Component/Testimonials/Testimonials'
 import Teams from '../../Component/Teams/Teams'
 import Blog from '../../Component/Blog/Blog'
 import FAQ from '../../Component/FAQ/FAQ'
+import Contatc from '../../Component/Contact/Contatc'
 
 export default function Home() {
 
@@ -24,6 +25,7 @@ export default function Home() {
             <Teams />
             <Blog />
             <FAQ />
+            <Contatc />
         </div>
     )
 }

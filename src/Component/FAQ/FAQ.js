@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Container, Col, Row, Accordion } from 'react-bootstrap'
 import AcordianFAQ from './AcordianFAQ'
-import { IoIosArrowDown } from "react-icons/io";
+
 import './FAQ.css'
 export default function FAQ() {
 
@@ -10,7 +10,7 @@ export default function FAQ() {
      Quas Labore Illo Eligendi Iure Asperiores,
      Modi Veniam Molestiae Vero Quasi. Ex, Alias
       Modi Voluptates Aspernatur Consequuntur Facere?`
-    const [infoAcordian, setinfoAcordian] = useState([
+    const [infoAcordian] = useState([
         { id: 0, title: 'Do You Offer Both On-Site And Remote IT Support?', FAQdist },
         { id: 1, title: 'What Is Techida ?', FAQdist },
         { id: 2, title: 'Is There Any Updates In The Future ?', FAQdist },
