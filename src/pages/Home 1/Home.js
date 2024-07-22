@@ -8,6 +8,7 @@ import Pricing from '../../Component/Pricing/Pricing'
 import Testimonials from '../../Component/Testimonials/Testimonials'
 import Teams from '../../Component/Teams/Teams'
 import Blog from '../../Component/Blog/Blog'
+import FAQ from '../../Component/FAQ/FAQ'
 
 export default function Home() {
 
@@ -22,6 +23,7 @@ export default function Home() {
             <Testimonials />
             <Teams />
             <Blog />
+            <FAQ />
         </div>
     )
 }

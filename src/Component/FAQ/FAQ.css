@@ -1,0 +1,33 @@
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    background-color: var(--bg-cardback);
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.accordion-header .accordion-button {
+
+    background-color: var(--bg-cardback) !important;
+    align-items: center;
+    color: var(--title-text);
+}
+
+.acordianHeadTitle {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.acordianHeadIcon {
+    color: var(--const-color);
+    font-size: 22px;
+}
+
+.accordion-button:focus {
+    border: 0;
+    outline: 0 !important;
+    box-shadow: none !important;
+}

@@ -17,7 +17,7 @@ export default function CardBlog(props) {
               <div className='d-flex align-content-center'><span className='me-2'><RxDrawingPinFilled className='greenTitle' /></span><p className='mt-1 textBody'>{props.date}</p></div>
             </div>
             <Card.Title className="titleClass" style={{ fontSize: 25, fontWeight: 'bold' }}>{props.title}</Card.Title>
-            <Card.Text className="textBody" style={{ fontSize: 15, lineHeight: 2, fontWeight: 600, opacity: '60%' }}>
+            <Card.Text className="textBody" style={{ fontSize: 15, lineHeight: 2, fontWeight: 600 }}>
               {props.decrption}
             </Card.Text>
             <CardLink style={{ textDecoration: 'none' }}>

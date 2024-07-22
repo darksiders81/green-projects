@@ -13,7 +13,7 @@ function CardSer(props) {
                     </h1>
                     <Card.Body>
                         <Card.Title className="titleClass" style={{ fontSize: 28, fontWeight: 'bolder' }}>{props.title}</Card.Title>
-                        <Card.Text className="textBody" style={{ fontSize: 15, lineHeight: 2, fontWeight: 600, opacity: '60%' }}>
+                        <Card.Text className="textBody" style={{ fontSize: 15, lineHeight: 2, fontWeight: 600 }}>
                             {props.decs}
                         </Card.Text>
                         <CardLink style={{ textDecoration: 'none' }}>

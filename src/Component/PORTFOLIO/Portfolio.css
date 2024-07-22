@@ -71,5 +71,5 @@ li>button {
 
 li>button.active {
     color: var(--const-color) !important;
-
+    background-color: var(--bg-cardback) !important;
 }
