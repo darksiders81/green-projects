@@ -6,7 +6,7 @@ function Header() {
     return (
         <>
             <Container>
-                <NavBars />
+                
                 <Head />
             </Container>
 

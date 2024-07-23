@@ -10,6 +10,7 @@ import Teams from '../../Component/Teams/Teams'
 import Blog from '../../Component/Blog/Blog'
 import FAQ from '../../Component/FAQ/FAQ'
 import Contatc from '../../Component/Contact/Contatc'
+import Footer from '../../Component/Footer/Footer'
 
 export default function Home() {
 
@@ -26,6 +27,7 @@ export default function Home() {
             <Blog />
             <FAQ />
             <Contatc />
+            <Footer />
         </div>
     )
 }

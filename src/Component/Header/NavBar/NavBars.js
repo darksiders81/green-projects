@@ -22,10 +22,10 @@ function NavBars() {
         }
     }
     const Home = [
-        { id: 1, title: 'Home1' },
-        { id: 2, title: 'Home2' },
-        { id: 3, title: 'Home3' },
-        { id: 4, title: 'Home RTL' }
+        { id: 1, title: 'Home1', route: '/home1' },
+        { id: 2, title: 'Home2', route: '/home2' },
+        { id: 3, title: 'Home3', route: '/home3' },
+        { id: 4, title: 'Home RTL', route: '/home4' }
     ]
     const pages = [
         { id: 1, title: '404 pages' },
