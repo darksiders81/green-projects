@@ -3,7 +3,7 @@ import { Container, Col, Row, Accordion } from 'react-bootstrap'
 import AcordianFAQ from './AcordianFAQ'
 
 import './FAQ.css'
-export default function FAQ() {
+export default function FAQ(props) {
 
     let FAQdist = `Lorem Ipsum, Dolor Sit Amet
      Consectetur Adipisicing Elit. Ipsum Ullam Earum Itaque,
@@ -21,7 +21,7 @@ export default function FAQ() {
         <>
             <Container className='my-5'>
                 <Row className="mt-5  ">
-                    <Col lg={6} xs={12} className="text-start" >
+                    <Col lg={props.ColumnHead} xs={12} className={props.align} >
                         <Row>
 
                             <h4 className="greenTitle">FAQ</h4>

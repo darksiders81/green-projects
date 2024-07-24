@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import { blogDatas } from '../../data'
 import { Container, Row, Col, CardGroup } from 'react-bootstrap'
 import CardBlog from './CardBlog'
-export default function Blog() {
+export default function Blog(props) {
   const [postData, setPostData] = useState(blogDatas)
   return (
     <>
       <Container className='my-5'>
         <Row className="mt-5  ">
-          <Col lg={6} xs={12} className="text-start" >
+          <Col lg={props.columnHead} xs={12} className={props.align} >
             <Row>
 
               <h4 className="greenTitle">BLOG</h4>
@@ -18,7 +18,7 @@ export default function Blog() {
                   Our Blog
                 </h1>
               </Col>
-              <Col lg={12} xs={12}>
+              <Col lg={12} xs={12} className={props.align}>
 
                 <p
                   style={{ lineHeight: 2, fontSize: 18 }}

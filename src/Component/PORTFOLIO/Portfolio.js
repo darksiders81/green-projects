@@ -5,7 +5,7 @@ import './Portfolio.css'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import CardPortfolio from './CardPortfolio';
-export default function Portfolio() {
+export default function Portfolio(props) {
 
     const [cardInfo] = useState(portfolioData)
     const [key, setKey] = useState('all');
@@ -14,9 +14,9 @@ export default function Portfolio() {
         <>
 
             <Container className="mt-5 pt-5">
-                <h4 className="greenTitle">PORTFOLIO</h4>
-                <Row>
-                    <Col lg={10} xs={12} className="mb-1">
+                <h4 className={`greenTitle ${props.align}`}>PORTFOLIO</h4>
+                <Row className={props.align}>
+                    <Col lg={props.columnHead} xs={12} className="mb-1">
                         <h1 className='titleClass'
                             style={{ fontSize: '50px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }}>
                             Our Portfolio</h1>

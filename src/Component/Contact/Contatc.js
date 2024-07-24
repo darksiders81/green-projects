@@ -5,7 +5,7 @@ import { IoPhonePortrait } from "react-icons/io5";
 import { FaMapMarkerAlt, FaInstagram } from "react-icons/fa";
 import './Contatc.css'
 import BtnJoin from '../BtnJoin/BtnJoin';
-export default function Contatc() {
+export default function Contatc(props) {
     const [informationContent] = useState([
         { id: 1, icon: <MdEmail />, title: 'Moein.kh.dark.siders@gmail.com' },
         { id: 2, icon: <IoPhonePortrait />, title: '09939192951' },
@@ -16,7 +16,7 @@ export default function Contatc() {
         <>
             <Container className='my-5'>
                 <Row className="mt-5  ">
-                    <Col lg={6} xs={12} className="text-start" >
+                    <Col lg={props.columnHead} xs={12} className={props.align} >
                         <Row>
 
                             <h4 className="greenTitle">CONTACT</h4>

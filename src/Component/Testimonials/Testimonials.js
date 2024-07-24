@@ -3,16 +3,16 @@ import { Col, Container, Row, CardGroup } from 'react-bootstrap'
 import { TestimonialsData } from '../../data'
 import CardTestItem from './CardTestItem'
 
-export default function Testimonials() {
+export default function Testimonials(props) {
     const [cardDataInfo] = useState(TestimonialsData)
     return (
         <>
             <Container className='my-5'>
-                <Row className="mt-5  ">
-                    <Col lg={6} xs={12} className="text-start" >
-                        <Row>
+                <Row className={`mt-5 ${props.align}`}>
+                    <Col lg={props.columnHead} xs={12} className={props.align}>
+                        <Row className={props.align}>
 
-                            <h4 className="greenTitle">TESTIMONIALS</h4>
+                            <h4 className={`greenTitle ${props.align}`}>TESTIMONIALS</h4>
                             <Col lg={12} xs={12}>
                                 <h1 className='titleClass'
                                     style={{ fontSize: '40px', fontWeight: 700, lineHeight: '65px' }}>

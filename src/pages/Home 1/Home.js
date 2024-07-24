@@ -22,9 +22,9 @@ export default function Home() {
             <WhyChosse />
             <Portfolio />
             <Pricing />
-            <Testimonials />
-            <Teams />
-            <Blog />
+            <Testimonials columnHead={7} />
+            <Teams columnHead={7} />
+            <Blog columnHead={7} />
             <FAQ />
             <Contatc />
             <Footer />
