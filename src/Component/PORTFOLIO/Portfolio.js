@@ -27,7 +27,7 @@ export default function Portfolio() {
                             id="controlled-tab-example"
                             activeKey={key}
                             onSelect={(k) => setKey(k)}
-                            className="mb-2 portList"
+                            className="mb-2 portList d-flex"
                         >
                             <Tab style={{ color: '#1FA84F' }} eventKey="all" title="All" className='portListItem '>
 

@@ -1,4 +1,4 @@
-.containerBox {
+.footerContaner .containerBox {
     background-color: #202020;
     padding: 20px;
     color: aliceblue;
@@ -10,7 +10,7 @@
     padding: 30px 0;
 }
 
-.conIcon {
+.footerContaner .conIcon {
     background-color: var(--const-color);
     display: flex;
     justify-content: center;
@@ -23,13 +23,13 @@
     margin-top: 8px;
 }
 
-ul>li {
+.footerContaner ul>li {
     color: aliceblue;
     list-style-type: none;
 
 }
 
-ul {
+.footerContaner ul {
     display: flex;
     flex-direction: column;
     padding-left: 0 !important;
@@ -44,11 +44,11 @@ ul {
     color: aliceblue;
 }
 
-li>a {
+.footerContaner li>a {
     text-decoration: none;
     color: aliceblue;
 }
 
-li>a:hover {
+.footerContaner li>a:hover {
     color: var(--const-color);
 }

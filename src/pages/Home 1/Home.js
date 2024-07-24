@@ -16,7 +16,7 @@ export default function Home() {
 
     return (
         <div className='bg-color'>
-            <Head />
+            <Head isImage={true} alignText="text-start pageOneStyle" ColumnCon={5} Column={12} />
             <OurServices />
             <About />
             <WhyChosse />

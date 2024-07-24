@@ -1,0 +1,38 @@
+.classStyle {
+    height: 700px;
+    padding: 30px;
+}
+
+.classStyle h1 {
+    font-size: 45px !important;
+    width: 100% !important;
+    margin: 40px 0;
+}
+
+.classStyle p {
+    line-height: 50px;
+    flex: content !important;
+    margin: 30px 0;
+}
+
+.classStyle button {
+    width: 50% !important;
+
+}
+
+.classStyle .btnContainer {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex: content;
+    margin: 30px 0;
+}
+
+.pageOneStyle button {
+    width: 75% !important;
+
+}
+
+.pageOneStyle .btnContainer {
+    text-align: center;
+}
