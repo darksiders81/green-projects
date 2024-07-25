@@ -1,0 +1,19 @@
+.IconForPage3 {
+    background-color: var(--const-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    border-radius: 50%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 52px;
+    margin-top: 12px;
+    color: var(--title-text);
+}
+
+.img-head {
+    height: 600px !important;
+    width: fit-content;
+    margin: 20px 0;
+}

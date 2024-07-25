@@ -9,14 +9,14 @@ import CardAbout from "./CardAbout"
 
 
 
-export default function Two() {
+export default function Two(props) {
     const [infoCardAbout] = useState(aboutInfodatas)
     return (
         <>
             <Container className='my-5'>
                 <Row className="px-2 justify-content-evenly align-items-center">
                     <Col lg={5} xs={12}>
-                        <img className="img-fluid" src="https://erramix-themes.com/techidaa/images/about/2.png" alt="" />
+                        <img className="img-fluid" src={props.image} alt="" />
                     </Col>
                     <Col lg={7} xs={12}   >
                         <Row className=' justify-content-center align-items-center'>
@@ -58,4 +58,7 @@ export default function Two() {
 
         </>
     )
+}
+Two.defaultProps ={
+    image : "https://erramix-themes.com/techidaa/images/about/2.png"
 }

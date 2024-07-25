@@ -48,7 +48,7 @@ export default function FAQ(props) {
                 </Row>
                 <Row className='align-content-center'>
                     <Col lg={6} xs={12}>
-                        <img className="img-fluid" src="https://erramix-themes.com/techidaa/images/faq/customer.png" alt="" />
+                        <img className="img-fluid" src={props.image} alt="" />
                     </Col>
                     <Col lg={6} xs={12}>
                         <Accordion flush>
@@ -70,4 +70,7 @@ export default function FAQ(props) {
 
         </>
     )
+}
+FAQ.defaultProps = {
+    image: "https://erramix-themes.com/techidaa/images/faq/customer.png"
 }

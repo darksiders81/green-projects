@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 
 import ProgressAbout from './ProgressAbout';
 
-export default function Tree() {
+export default function Tree(props) {
 
 
     const [progresInfo] = useState([
@@ -49,10 +49,13 @@ export default function Tree() {
 
                     </Col>
                     <Col lg={6} xs={12}>
-                        <img className="img-fluid" src="https://erramix-themes.com/techidaa/images/about/3.png" alt="" />
+                        <img className="img-fluid" src={props.image} alt="" />
                     </Col>
                 </Row>
             </Container>
         </>
     )
+}
+Tree.defaultProps = {
+    image: "https://erramix-themes.com/techidaa/images/about/3.png"
 }

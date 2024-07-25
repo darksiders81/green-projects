@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import BtnJoin from '../../BtnJoin/BtnJoin'
 
-export default function One() {
+export default function One(props) {
     return (
         <>
             <Container className='my-5'>
@@ -37,11 +37,14 @@ export default function One() {
 
                     </Col>
                     <Col lg={6} xs={12}>
-                        <img className="img-fluid" src="https://erramix-themes.com/techidaa/images/about/1.png" alt="" />
+                        <img className="img-fluid" src={props.image} alt="" />
                     </Col>
                 </Row>
             </Container>
 
         </>
     )
+}
+One.defaultProps = {
+    image: "https://erramix-themes.com/techidaa/images/about/1.png"
 }
