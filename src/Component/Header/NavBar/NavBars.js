@@ -41,11 +41,11 @@ function NavBars() {
         { id: 11, title: 'Terms Of Use' },
     ]
     const allNavLinks = [
-        { id: 1, title: 'About', link: '#About' },
-        { id: 2, title: 'Services', link: '#Services' },
-        { id: 3, title: 'Portfolio', link: '#Portfolio' },
-        { id: 4, title: 'Blog', link: '#Blog' },
-        { id: 5, title: 'Contact Us', link: '#Contact' }
+        { id: 1, title: 'About', route: '/about' },
+        { id: 2, title: 'Services', route: '/services' },
+        { id: 3, title: 'Portfolio', route: '/portfolio' },
+        { id: 4, title: 'Blog', route: '/blog' },
+        { id: 5, title: 'Contact Us', route: '/contact' }
     ]
 
     // style={{ backgroundColor: this.props.colors.thomeSecondry, color: this.props.colors.blackSecondry }}
@@ -60,9 +60,11 @@ function NavBars() {
                         <Nav className="mx-auto my-2 my-lg-0">
                             <DropdownCMP name='Home' obj={Home} />
                             {allNavLinks.map((navLink) => (
-                                <Link key={navLink.id} to={navLink.link}>
-                                    <NavLink href=''>{navLink.title}</NavLink>
-                                </Link>
+                                <NavLink>
+                                    <Link key={navLink.id} to={navLink.route}>
+                                        {navLink.title}
+                                    </Link>
+                                </NavLink>
                             ))}
                             <DropdownCMP name='Pages' obj={pages} />
                         </Nav>
