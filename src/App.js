@@ -2,17 +2,23 @@ import './assets/bootstrap.min.css'
 import './App.css';
 
 
-import { useRoutes } from 'react-router-dom';
+import { useRoutes, useLocation } from 'react-router-dom';
 import allRoutes from './router';
 import NavBars from './Component/Header/NavBar/NavBars';
+import { useEffect, useState } from 'react';
 
 function App() {
+  let location = useLocation();
+  const [ulrPath, setUrlPath] = useState(location.pathname)
+  useEffect(() => {
+    setUrlPath(location.pathname)
 
+  }, [location]);
   let Router = useRoutes(allRoutes)
-  
+
   return (
     <>
-      <div className="App" >
+      <div className={ulrPath === "/notfound" || location.key === 'default' ? "d-none" : "App"}>
         <NavBars />
       </div>
       {Router}
@@ -22,3 +28,4 @@ function App() {
 }
 
 export default App;
+// 

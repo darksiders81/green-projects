@@ -28,17 +28,17 @@ function NavBars() {
         { id: 4, title: 'Home RTL', route: '/home4' }
     ]
     const pages = [
-        { id: 1, title: '404 pages' },
-        { id: 2, title: 'Blog' },
-        { id: 3, title: 'About' },
-        { id: 4, title: 'Services' },
-        { id: 5, title: 'Portfolio' },
-        { id: 6, title: 'Contact' },
-        { id: 7, title: 'Login Page' },
-        { id: 8, title: 'Register' },
-        { id: 9, title: 'Portfolio Singles' },
-        { id: 10, title: 'Privacy Policy' },
-        { id: 11, title: 'Terms Of Use' },
+        { id: 1, title: '404 pages', route: '/notfound' },
+        { id: 2, title: 'Blog', route: "/blog" },
+        { id: 3, title: 'About', route: "/about" },
+        { id: 4, title: 'Services', route: "/services" },
+        { id: 5, title: 'Portfolio', route: "/portfolio" },
+        { id: 6, title: 'Contact', route: "/contact" },
+        { id: 7, title: 'Login Page', route: "" },
+        { id: 8, title: 'Register', route: "" },
+        { id: 9, title: 'Portfolio Singles', route: "" },
+        { id: 10, title: 'Privacy Policy', route: "" },
+        { id: 11, title: 'Terms Of Use', route: "" },
     ]
     const allNavLinks = [
         { id: 1, title: 'About', route: '/about' },
