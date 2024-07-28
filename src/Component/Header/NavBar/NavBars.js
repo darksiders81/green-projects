@@ -34,7 +34,7 @@ function NavBars() {
         { id: 4, title: 'Services', route: "/services" },
         { id: 5, title: 'Portfolio', route: "/portfolio" },
         { id: 6, title: 'Contact', route: "/contact" },
-        { id: 7, title: 'Login Page', route: "" },
+        { id: 7, title: 'Login Page', route: "/loginpage" },
         { id: 8, title: 'Register', route: "" },
         { id: 9, title: 'Portfolio Singles', route: "" },
         { id: 10, title: 'Privacy Policy', route: "" },

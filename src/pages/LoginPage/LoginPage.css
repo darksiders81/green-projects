@@ -1,0 +1,22 @@
+.formInput {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 30px;
+}
+
+.formInput input {
+    font-size: 22px;
+    padding: 10px;
+    border: 0;
+    background-color: #EFF0EF;
+
+}
+
+.formInput input:focus {
+    background-color: #EFF0EF;
+}
+
+input::selection {
+    background-color: #EFF0EF;
+}
