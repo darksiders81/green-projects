@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, NavLink } from "react-bootstrap";
 import { Nav, Navbar } from 'react-bootstrap';
 import DropdownCMP from './DropdownCMP';
@@ -49,28 +49,42 @@ function NavBars() {
     // style={{ backgroundColor: this.props.colors.thomeSecondry, color: this.props.colors.blackSecondry }}
     return (
         <div className='containerNav'>
-            <Navbar collapseOnClick fixed='top' expand="lg" className='fw-bold text-text-opacity-75 navbars pe-5 me-lg-0 text-center'
+            <Navbar
+                collapseOnSelect
+                fixed='top' expand="lg" className='fw-bold text-text-opacity-75 navbars pe-3 me-lg-0 text-center'
             >
                 <Container >
                     <Navbar.Brand href="#"><img width={150} src="https://erramix-themes.com/techidaa/images/logo/logo.png" alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="mx-auto my-2 my-lg-0">
+
+
                             <DropdownCMP name='Home' obj={Home} />
+
+
                             {allNavLinks.map((navLink) => (
-                                <NavLink>
-                                    <Link key={navLink.id} to={navLink.route}>
+                                <NavLink key={navLink.id} href='action' >
+                                    <Link to={navLink.route}>
                                         {navLink.title}
                                     </Link>
                                 </NavLink>
                             ))}
+
+
+
                             <DropdownCMP name='Pages' obj={pages} />
+
+
                         </Nav>
 
-                        <BtnJoin className='me-1' />
-                        <button className='darkMode ' onClick={clickHandler}>
-                            {isDark === 'dark' ? <MdLightMode /> : <MdDarkMode />}
-                        </button>
+
+                        <div className='d-flex justify-content-center my-4 my-lg-0'>
+                            <BtnJoin className='me-1' />
+                            <button className='darkMode ' onClick={clickHandler}>
+                                {isDark === 'dark' ? <MdLightMode /> : <MdDarkMode />}
+                            </button>
+                        </div>
 
 
                     </Navbar.Collapse>
