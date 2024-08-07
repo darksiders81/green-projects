@@ -25,7 +25,7 @@ function NavBars() {
         { id: 1, title: 'Home1', route: '/home1' },
         { id: 2, title: 'Home2', route: '/home2' },
         { id: 3, title: 'Home3', route: '/home3' },
-        { id: 4, title: 'Home RTL', route: '/home4' }
+
     ]
     const pages = [
         { id: 1, title: '404 pages', route: '/notfound' },
@@ -35,10 +35,8 @@ function NavBars() {
         { id: 5, title: 'Portfolio', route: "/portfolio" },
         { id: 6, title: 'Contact', route: "/contact" },
         { id: 7, title: 'Login Page', route: "/loginpage" },
-        { id: 8, title: 'Register', route: "" },
-        { id: 9, title: 'Portfolio Singles', route: "" },
-        { id: 10, title: 'Privacy Policy', route: "" },
-        { id: 11, title: 'Terms Of Use', route: "" },
+        { id: 8, title: 'Register', route: "/rigester" },
+
     ]
     const allNavLinks = [
         { id: 1, title: 'About', route: '/about' },
@@ -51,7 +49,7 @@ function NavBars() {
     // style={{ backgroundColor: this.props.colors.thomeSecondry, color: this.props.colors.blackSecondry }}
     return (
         <div className='containerNav'>
-            <Navbar fixed='top' expand="lg" className='fw-bold text-text-opacity-75 navbars'
+            <Navbar collapseOnClick fixed='top' expand="lg" className='fw-bold text-text-opacity-75 navbars pe-5 me-lg-0 text-center'
             >
                 <Container >
                     <Navbar.Brand href="#"><img width={150} src="https://erramix-themes.com/techidaa/images/logo/logo.png" alt="" /></Navbar.Brand>

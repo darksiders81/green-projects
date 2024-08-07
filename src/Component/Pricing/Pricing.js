@@ -12,7 +12,7 @@ export default function Pricing(props) {
                 <h4 className={`greenTitle ${props.align}`}>PRICING</h4>
                 <Row className={props.align}>
                     <Col lg={props.columnHead} xs={12} className="mb-1">
-                        <h1 style={{ fontSize: '50px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }} className='titleClass'>Our Pricing</h1>
+                        <h1 style={{  wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }} className='titleClass display-5'>Our Pricing</h1>
                     </Col>
                     <Col lg={props.columnHead} xs={12}>
                         <p className='textBody'>

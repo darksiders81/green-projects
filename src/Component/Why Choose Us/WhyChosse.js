@@ -12,7 +12,7 @@ export default function WhyChosse(props) {
                 <h4 className={`greenTitle ${props.align}`}>WHY CHOOSE US</h4>
                 <Row className={props.align}>
                     <Col lg={props.columnHead} xs={12} className="mb-1">
-                        <h1 style={{ fontSize: '50px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }} className='titleClass'>
+                        <h1 style={{  wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }} className='titleClass display-5'>
                             Why Our Clients Choose Us
                         </h1>
                     </Col>

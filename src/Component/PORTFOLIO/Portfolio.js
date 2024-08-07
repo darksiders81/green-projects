@@ -27,7 +27,7 @@ export default function Portfolio(props) {
                             id="controlled-tab-example"
                             activeKey={key}
                             onSelect={(k) => setKey(k)}
-                            className="mb-2 portList d-flex"
+                            className="portList d-flex mb-3"
                         >
                             <Tab style={{ color: '#1FA84F' }} eventKey="all" title="All" className='portListItem '>
 
@@ -53,7 +53,8 @@ export default function Portfolio(props) {
                     </Col>
                 </Row>
 
-                <Row className='g-3'>
+
+                <div className='cardCont'>
                     {key === 'all' && cardInfo.map(card => (
                         <CardPortfolio {...card} />
                     ))}
@@ -66,7 +67,11 @@ export default function Portfolio(props) {
                     {key === 'web' && cardInfo.map(card => (
                         card.desc === 'Web Application' && <CardPortfolio {...card} />
                     ))}
-                </Row>
+
+                </div>
+
+
+
 
 
 

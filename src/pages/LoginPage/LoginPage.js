@@ -1,8 +1,9 @@
-import { Field, Form, Formik } from 'formik'
+
 import React from 'react'
+import { Field, Form, Formik } from 'formik'
 import { Container, Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import BtnJoin from '../../Component/BtnJoin/BtnJoin'
+
 import './LoginPage.css'
 export default function LoginPage() {
     return (
@@ -10,16 +11,16 @@ export default function LoginPage() {
             <Container className='mt-5 pt-5'>
                 <Row className='align-items-center gap-5'>
                     <Col lg={6}>
-                        <img className='img-fluid w-100' src="https://erramix-themes.com/techidaa/images/auth/login.svg" alt="" />
+                        <img className='img-fluid w-100 d-none d-lg-block' src="https://erramix-themes.com/techidaa/images/auth/login.svg" alt="" />
                     </Col>
-                    <Col lg={5} className='ms-5'>
+                    <Col lg={5} className='mx-auto'>
                         <h1 className='titleClass'>
                             Login
                         </h1>
                         <p className='textBody'>
                             You Dont Have An Account ?
-                            <Link className='greenTitle ms-4'>
-                                Register Now
+                            <Link className='greenTitle ms-4' to="/rigester" style={{ textDecoration: "none" }}>
+                                Rigester Now
                             </Link>
                         </p>
                         <Formik
@@ -35,9 +36,9 @@ export default function LoginPage() {
                         >
                             {
                                 ({ values, onSubmit }) => (
-                                    <Form autoComplete='false' className='formInput'>
-                                        <Field type="email" name="email" placeholder="email......" value={values.email} />
-                                        <Field type="password" name="password" placeholder="password....." value={values.password} />
+                                    <Form autoComplete={false} className='formInput' >
+                                        <Field autoComplete="false" type="email" name="email" placeholder="email......" value={values.email} />
+                                        <Field autoComplete="false" type="password" name="password" placeholder="password....." value={values.password} />
                                         <button className='btn-join' onClick={onSubmit}>Login</button>
                                     </Form>
                                 )
@@ -46,7 +47,7 @@ export default function LoginPage() {
                         </Formik>
                         <p className='text-center mt-3'>
                             Forgot Password ?
-                            <Link className='greenTitle ms-4'>
+                            <Link className='greenTitle ms-4' style={{ textDecoration: "none" }}>
                                 Reset Password
                             </Link>
 

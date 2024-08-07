@@ -22,8 +22,8 @@ export default function Tree(props) {
 
 
                             <Col lg={11} xs={12}>
-                                <h1 className='titleClass'
-                                    style={{ fontSize: '40px', fontWeight: 700, lineHeight: '65px' }}>
+                                <h1 className='titleClass display-5'
+                                    style={{ fontWeight: 700, lineHeight: '65px' }}>
                                     We Are Here To IT Solution With 20 Years Of   <span className="greenTitle">Experience</span>
                                 </h1>
                             </Col>

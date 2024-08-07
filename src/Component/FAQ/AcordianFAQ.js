@@ -5,7 +5,7 @@ export default function AcordianFAQ(props) {
 
     return (
         <>
-            <Accordion.Item eventKey={props.id}>
+            <Accordion.Item eventKey={props.id} className='mx-2'>
                 <Accordion.Header >
                     {props.title}
                     

@@ -36,3 +36,7 @@
 .pageOneStyle .btnContainer {
     text-align: center;
 }
+
+.sectionone button {
+    width: 60% !important;
+}

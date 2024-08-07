@@ -8,8 +8,8 @@ export default function CardTestItem(props) {
 
     return (
         <>
-            <Col lg={4} xs={12} className=''>
-                <div className="container-card bg-opacity-10">
+            <Col lg={4} xs={12} className='mx-auto'>
+                <div className="container-card bg-opacity-10 mx-3">
                     <div className='d-flex  '>
                         <div>
                             <img src={props.imgProfile} alt="" className='profileImages' />

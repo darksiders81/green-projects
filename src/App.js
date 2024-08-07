@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <div className={ulrPath === "/notfound" || ulrPath === "/loginpage" ? "d-none" : "App"}>
+      <div className={ulrPath === "/notfound" || ulrPath === "/loginpage" || ulrPath === "/rigester" ? "d-none" : "App"}>
         <NavBars />
       </div>
       {Router}

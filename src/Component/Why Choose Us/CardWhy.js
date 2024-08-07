@@ -6,8 +6,8 @@ export default function CardWhy(props) {
     return (
         <>
             <Col lg={4} className='g-4 ' >
-                <Card border='0' className='transaction-card' >
-                    <h1 className='titleClass' style={{ fontSize: 55, paddingTop: 22, paddingLeft: 18 }} >
+                <Card border='0' className='transaction-card mx-2' >
+                    <h1 className='titleClass display-4' style={{ paddingTop: 22, paddingLeft: 18 }} >
                         {props.numberTitle}
                     </h1>
                     <Card.Body>

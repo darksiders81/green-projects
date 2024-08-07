@@ -23,8 +23,8 @@ export default function Two(props) {
 
 
                             <Col lg={12} xs={12}>
-                                <h1 className="text-center titleClass"
-                                    style={{ fontSize: '40px', fontWeight: 700, lineHeight: '65px' }}>
+                                <h1 className="text-center  titleClass display-5"
+                                    style={{  fontWeight: 700, lineHeight: '65px' }}>
                                     We Deal With The Aspects Of Professional  <span className="greenTitle">IT Services</span>
                                 </h1>
                             </Col>

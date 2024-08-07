@@ -26,7 +26,7 @@ export default function FAQ(props) {
 
                             <h4 className="greenTitle">FAQ</h4>
                             <Col lg={12} xs={12}>
-                                <h1 className='titleClass'
+                                <h1 className='titleClass display-5'
                                     style={{ fontSize: '40px', fontWeight: 700, lineHeight: '65px' }}>
                                     Frequently Asked Questions
                                 </h1>

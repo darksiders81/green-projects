@@ -6,13 +6,13 @@ function Head(props) {
     return (
         <>
             <Container style={{ paddingTop: 50 }}>
-                <Row className="mt-5 justify-content-center align-items-center">
+                <Row className="mt-5 justify-content-center align-items-center ">
                     <Col lg={props.ColumnCon} xs={12} className={props.alignText} >
                         <Row>
                             <Col lg={props.Column} xs={12}>
                                 <h1
-                                    className="titleClass"
-                                    style={{ fontSize: '55px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }}>
+                                    className="titleClass display-5"
+                                    style={{ wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }}>
                                     Excellent IT <span className="greenTitle">Solutions</span> For Your Success
                                 </h1>
                             </Col>
@@ -28,7 +28,7 @@ function Head(props) {
 
 
                             </Col>
-                            <div className="btnContainer">
+                            <div className="btnContainer mb-4 mb-lg-0">
                                 <BtnJoin />
                                 {
                                     !props.isImage && (

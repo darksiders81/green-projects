@@ -6,14 +6,14 @@ export default function One(props) {
     return (
         <>
             <Container className='my-5'>
-                <Row className="mt-5 justify-content-center align-items-center">
-                    <Col lg={6} xs={12} className="text-start" >
+                <Row className="mt-5 justify-content-center align-items-center sectionone ">
+                    <Col lg={6} xs={12} className="text-center text-lg-start" >
                         <Row>
 
                             <h4 className="greenTitle">About US</h4>
-                            <Col lg={12} xs={12}>
-                                <h1 className='titleClass'
-                                    style={{ fontSize: '40px', fontWeight: 700, lineHeight: '65px' }}>
+                            <Col lg={12} xs={18}>
+                                <h1 className='titleClass display-5'
+                                    style={{ fontWeight: 700, lineHeight: '65px' }}>
                                     The Best IT Solution Since  <span className="greenTitle">2015</span>
                                 </h1>
                             </Col>
@@ -28,8 +28,12 @@ export default function One(props) {
                                 </p>
 
                             </Col>
+                            <div className="btnContainer text-center">
+                                <BtnJoin />
 
-                            <BtnJoin />
+
+                            </div>
+
 
 
 

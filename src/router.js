@@ -7,6 +7,7 @@ import Home3 from "./pages/Home 3/Home3";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import NotFound from "./pages/NotFoundPages/NotFound";
 import PortfilioPages from "./pages/PortfilioPages/PortfilioPages";
+import Regester from "./pages/Rigesterpage/Regester";
 import ServicesPages from "./pages/ServicesPages/ServicesPages";
 
 
@@ -22,7 +23,9 @@ let allRoutes = [
     { path: '/blog', element: <BlogPages /> },
     { path: '/contact', element: <ContatcPages /> },
     { path: "/*", element: <NotFound /> },
-    { path: "/loginpage", element: <LoginPage /> }
+    { path: "/loginpage", element: <LoginPage /> },
+    { path: "/rigester", element: <Regester /> }
+
 ]
 
 

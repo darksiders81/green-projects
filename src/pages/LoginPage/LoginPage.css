@@ -6,17 +6,19 @@
 }
 
 .formInput input {
-    font-size: 22px;
-    padding: 10px;
+    font-size: 18px;
+    padding: 20px;
     border: 0;
-    background-color: #EFF0EF;
 
+    width: 80%;
+    margin: 0 auto;
 }
 
-.formInput input:focus {
-    background-color: #EFF0EF;
-}
 
-input::selection {
-    background-color: #EFF0EF;
+
+
+
+input {
+    background-color: var(--bg-cardback) !important;
+    color: var(--title-text) !important;
 }

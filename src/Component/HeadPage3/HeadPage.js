@@ -49,16 +49,16 @@ export default function HeadPage() {
                         <img className='img-fluid img-head' src="https://erramix-themes.com/techidaa/images/hero/3.jpg" alt="" />
                     </Col>
                 </Row>
-                <Row lg={4} xs={6} className='d-flex justify-content-between my-5 py-5 '>
-                    <Col className='text-center'>
+                <Row className='d-flex justify-content-between my-5 py-5 mx-auto'>
+                    <Col lg={4} xs={6} className='text-center'>
                         <h1 className='greenTitle'>{Math.floor(Math.random() * 100)}</h1>
                         <h5 className='textBody'>Years Of Experience</h5>
                     </Col>
-                    <Col className='text-center'>
+                    <Col lg={4} xs={6} className='text-center'>
                         <h1 className='greenTitle'>{Math.floor(Math.random() * 100)}</h1>
                         <h5 className='textBody'>Seccessfully Completed Projects</h5>
                     </Col>
-                    <Col className='text-center'>
+                    <Col lg={4} xs={6} className='text-center mx-auto mt-4 mt-lg-0 mx-lg-0'>
                         <h1 className='greenTitle'>{Math.floor(Math.random() * 100)}</h1>
                         <h5 className='textBody'>Global Clients</h5>
                     </Col>

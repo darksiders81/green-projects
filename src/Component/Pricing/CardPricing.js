@@ -8,8 +8,8 @@ import BtnJoin from '../BtnJoin/BtnJoin';
 export default function CardPricing(props) {
     return (
         <>
-            <Col lg={3} sm={6} xs={12} className='g-4 ' >
-                <div className={props.id === 3 ? 'cardItemContainer backGreen' : 'cardItemContainer'}>
+            <Col lg={3} sm={6} xs={12} className='g-4 mx-auto ' >
+                <div className={props.id === 3 ? 'cardItemContainer backGreen mx-2' : 'cardItemContainer mx-2'}>
                     <div className="cardItemHeader ">
                         <div className='cardsIcons'>
                             {props.icon}

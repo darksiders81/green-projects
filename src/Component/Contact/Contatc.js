@@ -21,8 +21,8 @@ export default function Contatc(props) {
 
                             <h4 className="greenTitle">CONTACT</h4>
                             <Col lg={12} xs={12}>
-                                <h1 className='titleClass'
-                                    style={{ fontSize: '40px', fontWeight: 700, lineHeight: '65px' }}>
+                                <h1 className='titleClass display-5'
+                                    style={{ fontWeight: 700, lineHeight: '65px' }}>
                                     Contact Us For Any Questions
                                 </h1>
                             </Col>
@@ -47,15 +47,15 @@ export default function Contatc(props) {
                             Contact Info :
                         </h3>
                         {informationContent.map(infoContent => (
-                            <Col lg={10} xs={12} className='d-flex gx-2 align-items-center'>
+                            <Col lg={10} xs={10} className='d-flex  align-items-center '>
                                 <span className='greenTitle' style={{ fontSize: 50 }}>{infoContent.icon}</span>
-                                <p className='fs-5 fw-bold mt-5 ms-5 textBody'> {infoContent.title}</p>
+                                <p className=' fw-bold mt-5 ms-3 pb-3 textBody'> {infoContent.title}</p>
                             </Col>
                         ))}
 
                     </Col>
                     <Col lg={6} xs={12}>
-                        <Row className='gy-3'>
+                        <Row className='gy-3 mx-2 mx-lg-0'>
                             <Col lg={6}>
                                 <input type="text" placeholder='name' className='inputName' />
                             </Col>
@@ -77,8 +77,7 @@ export default function Contatc(props) {
                 </Row>
 
 
-
-
+                
 
 
             </Container>

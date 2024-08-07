@@ -24,7 +24,7 @@
     color: var(--text-body) !important;
 }
 
-body {
+/* body {
     --sb-track-color: var(--bg-back);
     --sb-thumb-color: var(--const-color);
     --sb-size: 8px;
@@ -49,7 +49,7 @@ body::-webkit-scrollbar-thumb {
     body {
         scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
     }
-}
+} */
 
 .progress {
     color: #1fa84f !important;

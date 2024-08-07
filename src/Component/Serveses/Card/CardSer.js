@@ -5,10 +5,12 @@ function CardSer(props) {
     return (
         <>
 
-            <Col lg={4} className='g-4 ' >
+            <Col lg={4} xs={10} className='g-4 mx-auto mx-lg-0' >
                 <Card border='0' className='transaction-card' >
                     <h1
-                        style={{ fontSize: 90, marginLeft: 15, marginTop: 20, fontWeight: 'inherit', color: '#1FA84F' }} >
+                        style={{  marginLeft: 15, color: '#1FA84F' }}
+                        className="text-center text-lg-start display-1"
+                    >
                         {props.icons}
                     </h1>
                     <Card.Body>

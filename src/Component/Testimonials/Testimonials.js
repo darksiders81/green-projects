@@ -14,8 +14,8 @@ export default function Testimonials(props) {
 
                             <h4 className={`greenTitle ${props.align}`}>TESTIMONIALS</h4>
                             <Col lg={12} xs={12}>
-                                <h1 className='titleClass'
-                                    style={{ fontSize: '40px', fontWeight: 700, lineHeight: '65px' }}>
+                                <h1 className='titleClass display-5'
+                                    style={{  fontWeight: 700, lineHeight: '65px' }}>
                                     Customers Testmonials
                                 </h1>
                             </Col>

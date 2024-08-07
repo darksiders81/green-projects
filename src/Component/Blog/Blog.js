@@ -13,8 +13,8 @@ export default function Blog(props) {
 
               <h4 className="greenTitle">BLOG</h4>
               <Col lg={12} xs={12}>
-                <h1 className='titleClass'
-                  style={{ fontSize: '40px', fontWeight: 700, lineHeight: '65px' }}>
+                <h1 className='titleClass display-5'
+                  style={{ fontWeight: 700, lineHeight: '65px' }}>
                   Our Blog
                 </h1>
               </Col>

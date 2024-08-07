@@ -18,7 +18,7 @@ function OurServices(props) {
                 <h4 className={`greenTitle ${props.align}`}>OUR SERVICES</h4>
                 <Row className={props.align}>
                     <Col lg={props.columnHead} xs={12} className="mb-1">
-                        <h1 className="titleClass" style={{ fontSize: '50px', wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }}>
+                        <h1 className="titleClass display-5" style={{ wordSpacing: 10, fontWeight: 700, lineHeight: '65px' }}>
                             What We’re Offering?
                         </h1>
                         {/* 10 */}
